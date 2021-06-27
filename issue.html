@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="#" method="POST">
+            <label for="exampleInputEmail1" class="form-label">Your name</title></TItle></label>
+            <p><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Name"></p>
+            <label for="exampleInputEmail1" class="form-label">Book name</title></TItle></label>
+            <p><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Book"></p>
+            <label for="exampleInputEmail1" class="form-label">Copies</title></TItle></label>
+            <p><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="copy"></p>
+            <label for="exampleInputEmail1" class="form-label">Author name</title></TItle></label>
+            <p><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="author"></p>
+            <p><input type="submit" name="submit"></p>
+        <table>
+            <tbody>
+                {% for record in RECORDS %}
+                <tr>
+                        
+                    <th scope="row"></th>
+                    <td>{{record.Slot_assigned}}</td>
+                </tr>  
+                {% endfor %}
+            </tbody>
+        </table>
+    </form>
+    </body>
+</html>
